@@ -11,11 +11,12 @@ import backIcon from '../../assets/images/icons/back.svg';
 interface PageHeaderProps  {
     title: string;
     description?: string;
+    color: string;
 }
 
 const PageHeader: React.FunctionComponent<PageHeaderProps> = (props) => {
     return (
-        <Header>
+        <Header color={props.color}>
             
                 <Topbar>
                     <Link to="/">
@@ -27,7 +28,6 @@ const PageHeader: React.FunctionComponent<PageHeaderProps> = (props) => {
                 <Content>
                     <Strong>{props.title}</Strong>
                     { props.description ? <Subtitulo>{props.description}</Subtitulo>: null}
-                    {/* { props.background ? <p>{props.background}</p>: null} */}
                     {props.children}
                 </Content>
             </Header>

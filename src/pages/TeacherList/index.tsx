@@ -9,7 +9,7 @@ import './styles.css';
 function TeacherList() {
     return (
         <div id="page-teacher-list" className="container">
-            <PageHeader title="Esses são os Professores disponíveis.">
+            <PageHeader title="Esses são os Professores disponíveis." color={'#542058'}>
                 <form id="search-teachers">
                     <Input name="subject" label="Matéria"/>
                     <Input name="week_day" label="Dia da Semana"/>

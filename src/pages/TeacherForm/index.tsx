@@ -13,6 +13,7 @@ function TeacherForm() {
            <PageHeader 
            title="Quer dizer que você quer dar aulas." 
            description="O primeiro passo é preencher esse formulário de inscrição"
+           color={'#006975'}
            /> 
 
            <main>

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Header = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: var(--color-primary);
+    background-color: ${props => props.color};
 
     @media (min-width: 700px) {
         height: 340px;
@@ -37,7 +37,7 @@ export const Img = styled.img`
     height: 1.6rem;
     color: var(--color-base);
 `
-//Esta funcionando, quando dixei como strong, perdeu as props
+
 export const Strong = styled.strong`
     max-width: 30rem;
     font-size: 3.6rem;
@@ -51,7 +51,7 @@ export const Strong = styled.strong`
 `
 
 export const Subtitulo = styled.p`
-    max-width: 30rem;
+    max-width: 50rem;
     font-size: 1.6rem;
     line-height: 2.6rem;
     color: var(--color-base);
