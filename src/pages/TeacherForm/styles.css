@@ -29,13 +29,17 @@
 #page-teacher-form main fieldset legend {
     font: 700 2.4rem Achivo;
     color: var(--color-text-title);
-    margin-bottom:  2.4rem;
+    margin-bottom: 2.4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width:100%;
-    padding-bottom: 1.6rem;
+    padding: 2.6rem 0 1.6rem 0;
     border-bottom: 1px solid var(--color-line-in-white);
+}
+
+#page-teacher-form main fieldset .inout-block + .textarea-block {
+    margin-top: 2.4rem;
 }
 
 #page-teacher-form main label {
