@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Header, Topbar, Content, Strong, Img, Desc} from './PageHeader.style'
+import { Header, Topbar, Content, Strong, Img, Subtitulo} from './PageHeader.style';
 
 import LogoImg from '../../assets/images/LogoTeste_2.png';
 import backIcon from '../../assets/images/icons/back.svg';
+
+
+// import './syles.css'
 
 interface PageHeaderProps  {
     title: string;
@@ -23,7 +26,7 @@ const PageHeader: React.FunctionComponent<PageHeaderProps> = (props) => {
 
                 <Content>
                     <Strong>{props.title}</Strong>
-                    { props.description ? <Desc>{props.description}</Desc>: null}
+                    { props.description ? <Subtitulo>{props.description}</Subtitulo>: null}
                     {/* { props.background ? <p>{props.background}</p>: null} */}
                     {props.children}
                 </Content>

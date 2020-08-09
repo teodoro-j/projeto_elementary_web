@@ -38,10 +38,10 @@ export const Img = styled.img`
     color: var(--color-base);
 `
 //Esta funcionando, quando dixei como strong, perdeu as props
-export const Strong = styled.div`
+export const Strong = styled.strong`
     max-width: 30rem;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
+    font-size: 3.6rem;
+    line-height: 4.6rem;
     color: var(--color-base);
     margin-top:2.6rem;
 
@@ -50,7 +50,7 @@ export const Strong = styled.div`
     }
 `
 
-export const Desc = styled.div`
+export const Subtitulo = styled.p`
     max-width: 30rem;
     font-size: 1.6rem;
     line-height: 2.6rem;
