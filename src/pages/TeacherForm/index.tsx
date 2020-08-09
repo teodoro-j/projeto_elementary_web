@@ -13,7 +13,7 @@ function TeacherForm() {
         <div id="page-teacher-form" className="container" >
 
             <PageHeader
-                title="Quer dizer que você quer dar aulas."
+                title="Que incrível que você quer dar aulas."
                 description="O primeiro passo é preencher esse formulário de inscrição"
                 color={'#006975'}
             />
