@@ -11,7 +11,6 @@
     color: var(--color-base);
 }
 
-
 #page-teacher-list main {
     margin: 3.2rem auto;
     width: 90%;
@@ -30,9 +29,10 @@
         bottom: -34px; 
     }
 
-    #search-teachers .input-block + .input-block {
+    /* #search-teachers .input-block + .input-block 
+    #seacrg-teacher .select-block + .select-block{
         margin-top: 0;
-    }
+    } */
 
     #page-teacher-list main {
         padding: 1.2rem 0;

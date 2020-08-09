@@ -2,6 +2,7 @@ import React from 'react';
 import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
 import Textarea from '../../components/Textarea';
+import Select from '../../components/Select';
 
 import warningIcon from '../../assets/images/icons/warning.svg'
 
@@ -30,9 +31,24 @@ function TeacherForm() {
                <fieldset>
                     <legend>Sobre a aula</legend> 
 
-                    <Input name="subject" label="Matéria"/>
+                    <Select 
+                    name="subject" 
+                    label="Matéria"
+                    options={[
+                        { value: 'Banco de Dados', label: 'Banco de Dados'},
+                        { value: 'Back-end', label: 'Back-end'},
+                        { value: 'Engenharia de Software', label: 'Engenharia de Software'},
+                        { value: 'Estrutura de Dados', label: 'Estrutura de Dados'},
+                        { value: 'Front-end', label: 'Front-end'},
+                        { value: 'Redes', label: 'Redes'},
+                        { value: 'Sistemas Operacionais', label: 'Sistemas Operacionais'},
+                    ]}
+                    />
                     <Input name="cost" label="Custo da hora da sua aula"/>
-                    
+               </fieldset>
+
+               <fieldset>
+                   <legend>Horários disponíveis</legend>
                </fieldset>
 
                <footer>
