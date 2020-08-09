@@ -22,13 +22,13 @@
     font:1.6rem Archivo;
 }
 
-/* .input-block:focus-within::after {
+.input-block:focus-within::after {
     width: calc(100% - 3.2rem);
     height: 2px;
     content: '';
     background-color: var(--color-secundary);
     position: absolute;
-    left: 1.6rem;
+    left: -4.6rem;
     right: 1.6rem;
     margin: 6.1rem;
-} */
+} 

@@ -24,13 +24,14 @@
     font:1.6rem Archivo;
 }
 
-/* .textarea-block:focus-within::after {
+.textarea-block:focus-within::after {
     width: calc(100% - 3.2rem);
     height: 2px;
     content: '';
     background-color: var(--color-secundary);
     position: absolute;
-    left: 1.6rem;
+    left: -15.2rem;
     right: 1.6rem;
+    
     margin: 16.5rem;
-} */
+}
