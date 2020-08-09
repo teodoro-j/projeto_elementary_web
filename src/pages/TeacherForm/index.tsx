@@ -48,7 +48,11 @@ function TeacherForm() {
                </fieldset>
 
                <fieldset>
-                   <legend>Horários disponíveis</legend>
+                   <legend>Horários disponíveis
+                   <button type="button">
+                       + Novo horário
+                   </button>
+                   </legend>
                </fieldset>
 
                <footer>
