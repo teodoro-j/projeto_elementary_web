@@ -4,34 +4,42 @@ import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
 import './styles.css';
 
-function TeacherItem() {
+export interface Teacher {
+    id: number,
+    avatar: string,
+    bio: string,
+    cost: number,
+    name: string,
+    subject: string,
+    whatsapp: string,
+}
+
+interface TeacherItemProps {
+    teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
     return (
         <article className="teacher-item">
             <header>
-                <img src="https://avatars1.githubusercontent.com/u/46379117?s=460&u=7c05e2f6fd1c5d7dc13ac74bf497e272bbaa252f&v=4" alt="Fernanda Caramico" />
+                <img src={teacher.avatar} alt={teacher.name} />
                 <div>
-                    <strong>Fernanda Caramico</strong>
-                    <span>Front-end</span>
+                    <strong>{teacher.name}</strong>
+                    <span>{teacher.subject}</span>
                 </div>
             </header>
 
-            <p>
-                Protagonista das melhores novidades das tecnlogoias do Front-end
-                <br /><br />
-                Desde muito cedo apaixonado por conceitos de UX/UI, se tornou protagonistas
-                nas inovações oriúndas de Página Web utilizando seu instinto natural de Design,
-                tornando o ambiente muito mais intuitivo.
-            </p>
+            <p>{teacher.bio}</p>
 
             <footer>
                 <p>
                     Preço/hora
-                    <strong>R$70,00</strong>
+                    <strong>R${teacher.cost}</strong>
                 </p>
-                <button type="button">
+                <a href={`https://wa.me/${teacher.whatsapp}`}>
                     <img src={whatsappIcon} alt="WhatsApp" />
                         Entrar em contato.
-                </button>
+                </a>
             </footer>
         </article>
     )
